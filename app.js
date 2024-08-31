@@ -80,7 +80,7 @@ app.post('/register',async(req,res)=>{
     
   }
   catch(error){
-    res.status(500).json({message:"error"})
+    res.status(500).json({message:error})
   }
 })
 
@@ -104,7 +104,7 @@ app.post('/login',async(req,res)=>{
     }
   }
   catch(error){
-    res.status(500).json({message:"Error login user"})
+    res.status(500).json({message:error})
   }
 })
 
